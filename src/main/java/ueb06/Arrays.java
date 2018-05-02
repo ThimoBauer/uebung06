@@ -12,7 +12,10 @@ class Arrays {
 	}
 
 	private static <T> String toString (T[]array, int a){
-		if (array[a])
+		if (a == array.length-1)
+			return array[a].toString();
+		else
+			return array[a].toString() + ", " 
 
 	}
 
