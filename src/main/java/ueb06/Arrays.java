@@ -8,7 +8,7 @@ class Arrays {
 		if (array.length == 0)
 			return "[]";
 		else
-			return null;
+			return "[" + toString(array, 0) + "]";
 	}
 
 	private static <T> String toString (T[]array, int a){
