@@ -23,7 +23,17 @@ class Arrays {
 	 * Gib zurück, ob ein Objekt in dem Array enthalten ist; verwendet `equals`
 	 */
 	static <T> boolean contains(T[] array, T object) {
+		if (array == null)
+			return true;
+		else
+	}
 
-		return false;
+	private static <T> boolean contains (T[] array, T object, int a){
+		if (array[a].equals(object))
+			return true;
+		else if (!(a + 1 > array.length-1))
+			return array[a].equals();
+		else
+			return false;
 	}
 }
