@@ -5,8 +5,10 @@ class Arrays {
 	 * Gibt eine Stringrepraesentation des Arrays zurueck, z.B. [] oder [1, 2, 3]
 	 */
 	static <T> String toString(T[] array) {
-		if (array == null)
-			return null;
+		if (array.length == 0)
+			return "[]";
+		else
+			return "[" + toString(array) + "]";
 	}
 
 	/**
