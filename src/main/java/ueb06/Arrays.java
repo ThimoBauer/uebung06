@@ -26,13 +26,14 @@ class Arrays {
 		if (array == null)
 			return true;
 		else
+			return contains(array, object, 0);
 	}
 
 	private static <T> boolean contains (T[] array, T object, int a){
 		if (array[a].equals(object))
 			return true;
 		else if (!(a + 1 > array.length-1))
-			return array[a].equals();
+			return contains(array, object, a + 1);
 		else
 			return false;
 	}
