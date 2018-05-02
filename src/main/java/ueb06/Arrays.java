@@ -15,7 +15,7 @@ class Arrays {
 		if (a == array.length-1)
 			return array[a].toString();
 		else
-			return array[a].toString() + ", " 
+			return array[a].toString() + ", " + toString(array, a+1);
 
 	}
 
